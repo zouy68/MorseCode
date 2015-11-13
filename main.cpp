@@ -1,8 +1,15 @@
-#include <iostream>
+#include "main.h"
 
 using namespace std;
 
 void main()
 {
-	cout << "morse code\n"<< endl;
+	string str;
+	cin >> str;
+
+	string des;
+	des = code(str);
+	cout<< des << endl;
+	getch();
 }
+
