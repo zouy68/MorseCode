@@ -1,9 +1,15 @@
 #include "code.h"
 
+
 using namespace std;
 
-string code(string str)
+string morse::code(string str)
 {
 	if(str[0] == '-')
 		return "T";
+}
+
+void morse::init()
+{
+
 }

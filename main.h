@@ -4,4 +4,7 @@
 
 #include "code.h"
 
+template<typename T>
+void split(std::vector<T> &strvec, const T test, const T sparator );
+
 #endif
