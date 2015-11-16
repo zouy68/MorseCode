@@ -1,6 +1,8 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 #include <conio.h>
+#include <stdlib.h>
+
 
 #include "code.h"
 
