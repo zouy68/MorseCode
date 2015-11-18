@@ -32,21 +32,21 @@ void main()
 	vector<string> inputList;
 	string inList;
 	cout<<"please input code to decode or decode\n"
-		<<"C is for code\n"
-		<<"D is for decode"
-		<<endl;
+		<<"C is for code\n "
+		<<"D is for decode\n";
 	char inChoice;
 	inChoice = getch();
+	cout << "please input string to code or decode"<<endl;
+	getline(cin, inList);
+	split<string>(inputList, inList, " ");
+
 	if('c' == inChoice || 'C' == inChoice)
 	{
-		cout << "please input string to code\n"<<endl;
-		getline(cin, inList);
-		split<string>(inputList, inList, " ");
 		//mo.code();
 	}
 	else if('d' == inChoice || 'D' ==inChoice)
 	{
-		//
+		//mo.decode();
 	}
 	else
 	{
