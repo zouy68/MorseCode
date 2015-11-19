@@ -6,12 +6,19 @@
 #include <vector>
 #include <map>
 
+using namespace std;
+
 class morse
 {
 public:
-	std::string code(std::string str);
-	void decode();
+	vector<string> alphaList;
+	vector<string>numList;
+
 	void init();
+
+	string code(string str);
+	string decode(string str);
+
 
 private:
 	std::vector<std::string> alphabeta;

@@ -27,7 +27,11 @@ void split(vector<T> &strvec, const T test, const T sparator )
 void main()
 {
 	morse mo;
-	//mo.init();
+	mo.init();
+	mo.alphaList;
+
+	string result;
+
 
 	vector<string> inputList;
 	string inList;
@@ -36,16 +40,25 @@ void main()
 		<<"D is for decode\n";
 	char inChoice;
 	inChoice = getch();
-	cout << "please input string to code or decode"<<endl;
-	getline(cin, inList);
-	split<string>(inputList, inList, " ");
+	cout<<"you input:"<<inChoice<<endl;
+
 
 	if('c' == inChoice || 'C' == inChoice)
 	{
-		//mo.code();
+		cout << "please input string to code "<<endl;
+		getline(cin, inList);
+		split<string>(inputList, inList, " ");
+		for(int i = 0; i < inputList.size(); ++i)
+		{
+			result += mo.code(inputList[i]);
+			result += " || ";
+		}
 	}
 	else if('d' == inChoice || 'D' ==inChoice)
-	{
+	{	
+		cout << "please input string to decode"<<endl;
+		getline(cin, inList);
+		split<string>(inputList, inList, " ");
 		//mo.decode();
 	}
 	else
@@ -53,7 +66,7 @@ void main()
 		cout<<"error input"<<endl;
 	}
 
-
+	cout<< result << endl;
 	system("pause");
 
 
