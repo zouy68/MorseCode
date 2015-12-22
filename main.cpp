@@ -35,7 +35,7 @@ void main()
 
 	vector<string> inputList;
 	string inList;
-	cout<<"please input code to decode or decode\n"
+	cout<<"please input string to code or decode\n"
 		<<"C is for code\n "
 		<<"D is for decode\n";
 	char inChoice;
